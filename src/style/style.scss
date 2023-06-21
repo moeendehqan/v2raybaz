@@ -1,0 +1,76 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+$colorBlueLite: #a1cce9;
+$colorRedLite: #ecb6b6;
+$colorGreenLite: #d3f5c8;
+$colorwhite: #ffffff;
+$colorBlueDark: #134769;
+$colorRedDark: #771c1c;
+$colorGreenDark: #23610e;
+
+
+html,body,#root{
+    height: 100%;
+}
+
+.home{
+    height: 100%;
+    background-image: linear-gradient(to right top, #d16b6b, #da6a7f, #de6c95, #dd70ad, #d678c6, #e07ac6, #ea7bc6, #f37dc5, #ff7ea7, #ff878a, #ff9771, #fba95f);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .menu{
+        width: 90%;
+        height: 90%;
+        background-color: rgba($colorwhite, 0.7);
+        border-radius: 20px;
+        animation: showw 1.5s alternate 1 forwards;
+        opacity: 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        .item{
+            width: 250px;
+            height: 150px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: rgba($colorwhite, 0.5);
+            border-radius: 10px;
+            margin: 15px;
+            cursor: pointer;
+            &:hover{
+                background: rgba($colorBlueDark, 0.5);
+                span{
+                    color: $colorwhite;
+                }
+                p{
+                    color: $colorwhite;
+                }
+
+            }
+            span{
+                color: $colorBlueDark;
+                font-size: 30pt;
+            }
+            p{
+                font-size: 20pt;
+                color: $colorBlueDark;
+            }
+            
+        }
+    }
+    @keyframes showw {
+        to{
+            opacity: 1;
+        }
+        
+    }
+}

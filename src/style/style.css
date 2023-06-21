@@ -1,0 +1,63 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+.home {
+  height: 100%;
+  background-image: linear-gradient(to right top, #d16b6b, #da6a7f, #de6c95, #dd70ad, #d678c6, #e07ac6, #ea7bc6, #f37dc5, #ff7ea7, #ff878a, #ff9771, #fba95f);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home .menu {
+  width: 90%;
+  height: 90%;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 20px;
+  animation: showw 1.5s alternate 1 forwards;
+  opacity: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+.home .menu .item {
+  width: 250px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  margin: 15px;
+  cursor: pointer;
+}
+.home .menu .item:hover {
+  background: rgba(19, 71, 105, 0.5);
+}
+.home .menu .item:hover span {
+  color: #ffffff;
+}
+.home .menu .item:hover p {
+  color: #ffffff;
+}
+.home .menu .item span {
+  color: #134769;
+  font-size: 30pt;
+}
+.home .menu .item p {
+  font-size: 20pt;
+  color: #134769;
+}
+@keyframes showw {
+  to {
+    opacity: 1;
+  }
+}/*# sourceMappingURL=style.css.map */
